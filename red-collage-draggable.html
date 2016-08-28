@@ -127,7 +127,7 @@
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <script>
     
-      	$( #dragdiv() {
+      	$( function() {
       		$( "#red1" ).draggable({ containment: "div.frame"});
       		$( "#red2" ).draggable({ containment: "div.frame"});
       		$( "#red3" ).draggable({ containment: "div.frame"});
@@ -161,8 +161,8 @@ in the meanwhile
          
 		    <div class="frame">
                 <div class="invisible-frame">
-        		<div id="red1" class="draggable ui-widget-content"></div>
-            		<div id="red2" class="draggable ui-widget-content"></div>
+        		<div id="red1" class="ui-widget-content"></div>
+            		<div id="red2" class="ui-widget-content"></div>
             		<div id="red3" class="ui-widget-content"></div>
     		    </div>
 		        <div class="nagysig"> <em>Signature</em> </div>
