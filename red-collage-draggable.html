@@ -4,7 +4,7 @@
 		<title>Red Collage, 1921</title>
 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
-
+  <link rel="stylesheet" href="/resources/demos/style.css">
   <style>
   
   html, body {
@@ -87,12 +87,16 @@
           width:10em;
           height:5.5em;
           background-color:#ad0907;
-          resize: both;
-    	overflow: auto;
+        
+         /* resize: both;
+    	overflow: auto;*/
+    	
           /*-ms-transform: rotate(-0.6deg); /* IE 9 */
       	/*-webkit-transform: rotate(-0.6deg); /* Safari */
       	/*transform: rotate(-0.6deg);*/
-       }
+       
+      	
+      }
      
           
        #red2{
@@ -128,7 +132,7 @@
     <script>
     
       	$( function() {
-      		$( "#red1" ).draggable({ containment: "div.frame"});
+      		$( "#red1" ).draggable();
       		$( "#red2" ).draggable({ containment: "div.frame"});
       		$( "#red3" ).draggable({ containment: "div.frame"});
 
