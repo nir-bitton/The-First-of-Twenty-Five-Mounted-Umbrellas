@@ -126,13 +126,15 @@
     <script>
     
       	$( function() {
-      		$( "#red1, #red2, #red3" ).draggable();
+      		$( "#red1" ).draggable({ containment: "div.frame"});
+      		$( "#red2" ).draggable({ containment: "div.frame"});
+      		$( "#red3" ).draggable({ containment: "div.frame"});
       	} );
       
       	$( function() {
-    		$( "#red1, #red2, #red3" ).resizable({
-    			containment: "parent"
-    			handles: "n, e, s, w"
+      		$( "#red1" ).resizeable({ containment: "div.frame"});
+      		$( "#red2" ).resizeable({ containment: "div.frame"});
+      		$( "#red3" ).resizeable({ containment: "div.frame"});
       			/*helper: "ui-resizable-helper"*/
     		});
   	} );
