@@ -87,34 +87,36 @@
           width:10em;
           height:5.5em;
           background-color:#ad0907;
-          -ms-transform: rotate(-0.6deg); /* IE 9 */
-      	-webkit-transform: rotate(-0.6deg); /* Safari */
-      	transform: rotate(-0.6deg);
+          /*-ms-transform: rotate(-0.6deg); /* IE 9 */
+      	/*-webkit-transform: rotate(-0.6deg); /* Safari */
+      	/*transform: rotate(-0.6deg);*/
        }
      
           
        #red2{
-          position: relative;
-          float:right;
-          width:5.5em;
-          height:100%;
-          background-color:#ad0907;
-          -ms-transform: rotate(0.6deg); /* IE 9 */
-      	-webkit-transform: rotate(0.6deg); /* Safari */
-      	transform: rotate(0.6deg);
+        position: relative;
+        float:right;
+        width:5.5em;
+        height:100%;
+        background-color:#ad0907;
+        /* -ms-transform: rotate(0.6deg); /* IE 9 */
+      	/* -webkit-transform: rotate(0.6deg); /* Safari */
+      	/* transform: rotate(0.6deg);*/
          
-         }
+        }
       
-         #red3{
-            position: relative;
-            width:0.5em;
-            height:5.5em;
-            background-color:#ad0907;
-            margin: auto;
-            -ms-transform: translate(-4em,0px); /* IE 9 */
-     	      -webkit-transform: translate(-4em,0px); /* Safari */
-          	transform: translate(-4em,0px); /* Standard syntax */
-            }
+        #red3{
+	        position: relative;
+	        width:0.5em;
+	        height:5.5em;
+	        background-color:#ad0907;
+	        margin: auto;
+	        -ms-transform: translate(-4em,0px); /* IE 9 */
+	     	-webkit-transform: translate(-4em,0px); /* Safari */
+	        transform: translate(-4em,0px); /* Standard syntax */
+	}
+        
+        .ui-resizable-helper { border: 1px dotted #ad0907; }
         
     </style>
     
@@ -122,9 +124,17 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <script>
-      $( function() {
-      $( "#red1" ).draggable();
-      } );
+    
+      	$( function() {
+      		$( "#red1", "#red2", "#red3" ).draggable();
+      	} );
+      
+      	$( function() {
+    		$( "#red1" ).resizable({
+      			helper: "ui-resizable-helper"
+    		});
+  	} );
+  	
     </script>
 
 
