@@ -87,6 +87,8 @@
           width:10em;
           height:5.5em;
           background-color:#ad0907;
+          resize: both;
+    	overflow: auto;
           /*-ms-transform: rotate(-0.6deg); /* IE 9 */
       	/*-webkit-transform: rotate(-0.6deg); /* Safari */
       	/*transform: rotate(-0.6deg);*/
@@ -131,13 +133,6 @@
       		$( "#red3" ).draggable({ containment: "div.frame"});
 
       	} );
-      
-     
-      	$( #sizediv() {
-      		$( "#red1" ).resizeable({ containment: "div.frame"});
-      		helper: "ui-resizable-helper"
-    		});
-  	} );
   	
     </script>
 
@@ -167,8 +162,8 @@ in the meanwhile
 		    <div class="frame">
                 <div class="invisible-frame">
         		<div id="red1" class="ui-widget-content"></div>
-            		<div id="red2" class="draggable ui-widget-content"></div>
-            		<div id="red3" class="draggable ui-widget-content"></div>
+            		<div id="red2" class="ui-widget-content"></div>
+            		<div id="red3" class="ui-widget-content"></div>
     		    </div>
 		        <div class="nagysig"> <em>Signature</em> </div>
 		        <div class="attribute"> <em>Red Collage, 1921</em> </div>
