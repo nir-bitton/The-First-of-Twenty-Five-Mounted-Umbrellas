@@ -117,9 +117,13 @@
 	        height:5.5em;
 	        background-color:#ad0907;
 	        margin: auto;
+	        /*
 	        -ms-transform: translate(-4em,0px); /* IE 9 */
+	     	/*
 	     	-webkit-transform: translate(-4em,0px); /* Safari */
+	        /*
 	        transform: translate(-4em,0px); /* Standard syntax */
+	        
 	}
         
         /*.ui-resizable-helper { border: 1px solid #cc6362; }*/
@@ -133,21 +137,9 @@
     
       	$( function() {
       		$( "#red1, #red2, #red3" ).resizable({ containment: "div.frame"}).draggable({ containment: "div.frame"});
-      		/*
-      		$( "#red2" ).resizable({ containment: "div.frame"}).draggable({ containment: "div.frame"});
-      		$( "#red3" ).resizable({ containment: "div.frame"}).draggable({ containment: "div.frame"});
-      		*/
-      		
       		$( "#red1, #red2, #red3" ).find("div.ui-resizable-se").removeClass("ui-icon");
 		$( "#red1, #red2, #red3" ).find("div.ui-resizable-se").removeClass("ui-icon-gripsmall-diagonal-se");
-		
-		/*
-		$("#red2").find("div.ui-resizable-se").removeClass("ui-icon");
-		$("#red2").find("div.ui-resizable-se").removeClass("ui-icon-gripsmall-diagonal-se");
-		
-		$("#red3").find("div.ui-resizable-se").removeClass("ui-icon");
-		$("#red3").find("div.ui-resizable-se").removeClass("ui-icon-gripsmall-diagonal-se");
-		*/
+
       	} );
   	
     </script>
