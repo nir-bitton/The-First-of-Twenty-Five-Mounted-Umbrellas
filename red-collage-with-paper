@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Red Collage, 1921</title>
+
+<style>
+
+html, body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family:helvetica;
+    font-size:13px;
+    line-height:1.2em;
+    }
+ 
+
+div.block{
+    margin-top:7px;
+    margin-left:7px;
+    margin-bottom:2px;
+    }
+div.inlinea{
+    display:inline-block;
+    margin-left:7px;
+    }    
+div.inlineb{
+    display:inline-block;
+    background-color:#7e7e7e
+    }
+    
+    div.inlineb:hover{
+    display:inline-block;
+    background-color:#0c5593;
+    
+    }
+    
+    a{
+        text-decoration:none;
+        color:white;
+        padding:3px 4px 3px 4px;;
+        }
+    
+    
+      div.frame {
+        top:42px;
+        position: relative;  
+        height:48em;
+        width:80em;
+        border:1px solid #d0d0d0;
+        margin: auto;
+        background-color:#f9f7e8;
+        }
+    
+    div.frame > div:first-child {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-52%, -50%);
+        width:55%;
+        height:50%;
+        
+    }
+    
+    div.nagysig {
+    position: absolute;
+    right:50px;    
+    bottom:8px;
+ 
+    }
+    
+      div.attribute {
+    position: absolute;
+    font-size:10px;    
+    bottom:-22px;
+    margin-left:-1px;
+        
+        
+    }
+    
+    #red1{
+        position: absolute;
+        bottom:0;
+        float:left;
+        width:10em;
+        height:5.5em;
+        background-color:#ad0907;
+        -ms-transform: rotate(-0.6deg); /* IE 9 */
+    	-webkit-transform: rotate(-0.6deg); /* Safari */
+    	transform: rotate(-0.6deg);
+     }
+   
+        
+     #red2{
+        position: relative;
+        float:right;
+        width:5.5em;
+        height:100%;
+        background-color:#ad0907;
+        -ms-transform: rotate(0.6deg); /* IE 9 */
+    	-webkit-transform: rotate(0.6deg); /* Safari */
+    	transform: rotate(0.6deg);
+       
+       }
+    
+     #red3{
+        position: relative;
+        width:0.5em;
+        height:5.5em;
+        background-color:#ad0907;
+        margin: auto;
+        -ms-transform: translate(-4em,0px); /* IE 9 */
+ 	-webkit-transform: translate(-4em,0px); /* Safari */
+	transform: translate(-4em,0px); /* Standard syntax */
+        }
+        
+        </style>
+
+	</head>
+
+	<body>
+	
+<div class="block">
+– – –<br><br>
+Aside from the surprising Turner in the very end, homage for the highlight of the day (as part of my preparations for the web class).
+</div>
+<div class="inlinea">
+in the meanwhile 	
+	</div>
+<div class="inlineb">	
+	<a href="https://goo.gl/9de8Jx">More Nagy</a>
+</div>
+<div class="inlineb">	
+	<a href="http://goo.gl/mpNMy5">Jean Arp</a>
+</div>
+<div class="inlineb">	
+	<a href="http://goo.gl/5hapc8">Hanne Darboven</a>
+</div>
+			    
+         
+		    <div class="frame">
+                <div class="invisible-frame">
+        			<div id="red1"></div>
+            		<div id="red2"></div>
+            		<div id="red3"></div>
+    		    </div>
+		        <div class="nagysig"> <em>Signature</em> </div>
+		        <div class="attribute"> <em>Red Collage, 1921</em> </div>
+
+    		</div>
+	</body>
+</html>
