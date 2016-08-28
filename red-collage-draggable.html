@@ -116,7 +116,7 @@
 	        transform: translate(-4em,0px); /* Standard syntax */
 	}
         
-        .ui-resizable-helper { border: 1px dotted #ad0907; }
+        /*.ui-resizable-helper { border: 1px solid #cc6362; }*/
         
     </style>
     
@@ -126,12 +126,14 @@
     <script>
     
       	$( function() {
-      		$( "#red1", "#red2", "#red3" ).draggable();
+      		$( "#red1, #red2, #red3" ).draggable();
       	} );
       
       	$( function() {
-    		$( "#red1" ).resizable({
-      			helper: "ui-resizable-helper"
+    		$( "#red1, #red2, #red3" ).resizable({
+    			containment: "parent"
+    			handles: "n, e, s, w"
+      			/*helper: "ui-resizable-helper"*/
     		});
   	} );
   	
